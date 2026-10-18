@@ -1,0 +1,10 @@
+services:
+  - type: web
+    name: pure-canada-website
+    runtime: node
+    plan: free
+    buildCommand: npm run build
+    startCommand: npm start
+    envVars:
+      - key: NODE_VERSION
+        value: 22.20.0
