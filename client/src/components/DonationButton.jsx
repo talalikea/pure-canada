@@ -1,7 +1,9 @@
-// Replace this with the real donation processor URL when available.
-export const DONATION_LINK = "";
+import { useLanguage } from "../context/LanguageContext";
 
-function DonationButton({ className = "", label = "Donate Now" }) {
+export const DONATION_LINK = "https://www.zeffy.com/en-CA/donation-form/donate-to-change-lives-24516";
+
+function DonationButton({ className = "", label }) {
+  const { t } = useLanguage();
   const hasLink = DONATION_LINK.trim().length > 0;
 
   return (
@@ -15,7 +17,7 @@ function DonationButton({ className = "", label = "Donate Now" }) {
         if (!hasLink) e.preventDefault();
       }}
     >
-      {label}
+      {label || t.donate}
     </a>
   );
 }

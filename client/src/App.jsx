@@ -1,7 +1,12 @@
 import { useEffect, useState } from "react";
 import Header from "./components/Header";
+import Hero from "./components/Hero";
+import Impact from "./components/Impact";
+import Programs from "./components/Programs";
+import About from "./components/About";
+import Events from "./components/Events";
+import Contact from "./components/Contact";
 import Footer from "./components/Footer";
-import DonationButton from "./components/DonationButton";
 import "./App.css";
 
 const API_URL = import.meta.env.VITE_API_URL || "http://localhost:4000";
@@ -19,16 +24,15 @@ function App() {
   return (
     <div className="app">
       <Header />
-      <main className="hero">
-        <h2>Help us rebuild lives and restore hope across Canada.</h2>
-        <p>
-          Pure Canada supports individuals and families recovering from hardship,
-          providing resources, community, and a path forward.
-        </p>
-        <DonationButton className="donate-button--large" />
-        <p style={{ fontSize: "12px", color: "#999" }}>API status: {apiStatus}</p>
+      <main>
+        <Hero />
+        <Impact />
+        <Programs />
+        <About />
+        <Events />
+        <Contact />
       </main>
-      <Footer />
+      <Footer apiStatus={apiStatus} />
     </div>
   );
 }
