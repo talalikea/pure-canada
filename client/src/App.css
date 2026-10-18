@@ -1,0 +1,101 @@
+.app {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+/* Header */
+.site-header {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  padding: 16px 32px;
+  border-bottom: 1px solid #eee;
+}
+
+.site-header__logo {
+  width: 56px;
+  height: 56px;
+  border-radius: 14px;
+}
+
+.site-header__brand h1 {
+  margin: 0;
+  font-size: 28px;
+  letter-spacing: 0.5px;
+}
+
+.site-header__tagline {
+  margin: 2px 0 0;
+  font-size: 14px;
+  color: var(--color-secondary);
+}
+
+.site-header__donate {
+  margin-left: auto;
+}
+
+/* Hero */
+.hero {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  gap: 20px;
+  padding: 64px 24px;
+  background: linear-gradient(180deg, #ffffff 0%, #e6fbfd 100%);
+}
+
+.hero h2 {
+  font-size: 36px;
+  margin: 0;
+  max-width: 720px;
+}
+
+.hero p {
+  max-width: 560px;
+  font-size: 16px;
+  line-height: 1.6;
+  margin: 0;
+}
+
+/* Donation button */
+.donate-button {
+  display: inline-block;
+  font-family: var(--font-secondary);
+  font-weight: 700;
+  font-size: 16px;
+  color: var(--color-white);
+  background: linear-gradient(135deg, var(--color-primary), var(--color-secondary));
+  border: none;
+  border-radius: 999px;
+  padding: 14px 36px;
+  text-decoration: none;
+  cursor: pointer;
+  transition: transform 0.15s ease, box-shadow 0.15s ease;
+  box-shadow: 0 4px 14px rgba(1, 177, 226, 0.35);
+}
+
+.donate-button:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 18px rgba(1, 177, 226, 0.45);
+}
+
+.donate-button--large {
+  font-size: 18px;
+  padding: 16px 44px;
+}
+
+/* Footer */
+.site-footer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  padding: 20px;
+  background-color: var(--color-dark);
+  color: var(--color-white);
+  font-size: 14px;
+}

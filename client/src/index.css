@@ -1,0 +1,41 @@
+:root {
+  --color-dark: #525252;
+  --color-primary: #00d7e6;
+  --color-secondary: #01b1e2;
+  --color-white: #ffffff;
+  --font-primary: "Cinzel", serif;
+  --font-secondary: "Open Sans", sans-serif;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: var(--font-secondary);
+  color: var(--color-dark);
+  background-color: var(--color-white);
+}
+
+#root {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+h1,
+h2,
+h3 {
+  font-family: var(--font-primary);
+  color: var(--color-dark);
+}
+
+a {
+  color: inherit;
+}
