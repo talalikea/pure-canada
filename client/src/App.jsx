@@ -9,7 +9,9 @@ import Contact from "./components/Contact";
 import Footer from "./components/Footer";
 import "./App.css";
 
-const API_URL = import.meta.env.VITE_API_URL || "http://localhost:4000";
+// Empty string = same-origin requests (used in production where the API is served
+// from the same Express app). Set VITE_API_URL for local development across ports.
+const API_URL = import.meta.env.VITE_API_URL || "";
 
 function App() {
   const [apiStatus, setApiStatus] = useState("checking...");

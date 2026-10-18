@@ -21,6 +21,20 @@ npm run dev           # runs client (http://localhost:5173) and server (http://l
 
 ## Donation button
 
-The "Donate Now" button lives in [client/src/components/DonationButton.jsx](client/src/components/DonationButton.jsx).
-Its link is intentionally empty (`DONATION_LINK = ""`) until a real payment/donation
-processor URL is available — update that constant when ready.
+The "Donate Now" button lives in [client/src/components/DonationButton.jsx](client/src/components/DonationButton.jsx)
+and links to the organization's Zeffy donation page.
+
+## Deploying (Render)
+
+This repo deploys as a **single Render Web Service**: the root `build` script installs
+and builds the React client, then the root `start` script runs the Express server,
+which serves the built client (`client/dist`) and the `/api/*` routes from one process.
+
+Render service settings:
+
+- Root Directory: _(leave blank — repo root)_
+- Build Command: `npm run build`
+- Start Command: `npm start`
+
+No extra environment variables are required; Render provides `PORT` automatically.
+
