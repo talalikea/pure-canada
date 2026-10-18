@@ -772,6 +772,20 @@ html[dir="rtl"] .site-footer__col h4 {
 }
 
 @media (max-width: 720px) {
+  .site-header__inner {
+    gap: 12px;
+  }
+
+  .site-header__logo {
+    width: 38px;
+    height: 38px;
+  }
+
+  .site-header__name {
+    font-size: 14px;
+    line-height: 1.15;
+  }
+
   .site-header__toggle {
     display: flex;
   }
@@ -815,3 +829,30 @@ html[dir="rtl"] .site-footer__col h4 {
     grid-template-columns: 1fr;
   }
 }
+
+@media (max-width: 480px) {
+  .impact__grid {
+    grid-template-columns: 1fr;
+  }
+
+  .program-panel {
+    padding: 24px;
+  }
+
+  .hero__actions {
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .hero__actions .btn,
+  .hero__actions .donate-button {
+    width: 100%;
+    text-align: center;
+    justify-content: center;
+  }
+
+  .contact__grid {
+    flex-direction: column;
+  }
+}
+
