@@ -1,4 +1,4 @@
-import logo from "../assets/logo.svg";
+import logo from "../assets/logo.png";
 import DonationButton from "./DonationButton";
 
 function Header() {
