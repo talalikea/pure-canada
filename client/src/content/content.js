@@ -133,7 +133,7 @@ const content = {
     contact: {
       title: "Get in Touch",
       lede: "We welcome inquiries from volunteers, partners, donors, and community members.",
-      email: { label: "Email", value: "info@purecanada.net" },
+      email: { label: "Email", value: "info@purecanada.org" },
     },
     footer: {
       about:
@@ -274,7 +274,7 @@ const content = {
     contact: {
       title: "تواصل معنا",
       lede: "نرحب بالاستفسارات من المتطوعين والشركاء والمانحين وأعضاء المجتمع.",
-      email: { label: "البريد الإلكتروني", value: "info@purecanada.net" },
+      email: { label: "البريد الإلكتروني", value: "info@purecanada.org" },
     },
     footer: {
       about: "مؤسسة بيور كندا هي منظمة غير ربحية مسجلة في كندا، تعمل حصرياً للأغراض الخيرية والإنسانية والتعليمية.",
