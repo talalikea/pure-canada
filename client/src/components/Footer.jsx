@@ -23,6 +23,7 @@ function Footer({ apiStatus = "checking..." }) {
           <a href="#programs">{t.nav.programs}</a>
           <a href="#about">{t.nav.about}</a>
           <a href="#events">{t.nav.events}</a>
+          <a href="#gallery">{t.nav.gallery}</a>
           <a href="#contact">{t.nav.contact}</a>
         </div>
 

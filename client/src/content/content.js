@@ -8,6 +8,7 @@ const content = {
       programs: "Programs",
       about: "About",
       events: "Events",
+      gallery: "Gallery",
       contact: "Contact",
     },
     donate: "Donate Now",
@@ -130,6 +131,36 @@ const content = {
           "This meeting provided an opportunity for members, volunteers, and partners to come together, discuss our ongoing programs, and explore ways to strengthen our impact.",
       },
     },
+    gallery: {
+      title: "Our Work in Action",
+      lede: "A glimpse into the daily efforts of our team and volunteers on the ground — delivering aid, distributing supplies, and supporting families in need.",
+      items: [
+        {
+          caption: "Our field team unloading relief supplies for distribution to local families.",
+        },
+        {
+          caption: "Handing out aid packages directly from our delivery truck.",
+        },
+        {
+          caption: "Carrying essential supplies to families who need them most.",
+        },
+        {
+          caption: "Reaching neighborhoods street by street with essential aid.",
+        },
+        {
+          caption: "Hand-delivering care packages to our community partners.",
+        },
+        {
+          caption: "Partnering with local shops to prepare school supply kits for children.",
+        },
+        {
+          caption: "Preparing backpacks and stationery ahead of the school year.",
+        },
+        {
+          caption: "Distributing backpacks and school supplies to children at a community event.",
+        },
+      ],
+    },
     contact: {
       title: "Get in Touch",
       lede: "We welcome inquiries from volunteers, partners, donors, and community members.",
@@ -150,6 +181,7 @@ const content = {
       programs: "البرامج",
       about: "من نحن",
       events: "الفعاليات",
+      gallery: "معرض الصور",
       contact: "اتصل بنا",
     },
     donate: "تبرع الآن",
@@ -270,6 +302,36 @@ const content = {
         description:
           "وفر هذا الاجتماع فرصة للأعضاء والمتطوعين والشركاء للالتقاء ومناقشة برامجنا الجارية واستكشاف سبل تعزيز تأثيرنا.",
       },
+    },
+    gallery: {
+      title: "عملنا على أرض الواقع",
+      lede: "لمحة عن الجهود اليومية لفريقنا ومتطوعينا على الأرض ـ في توصيل المساعدات وتوزيع المستلزمات ودعم العائلات المحتاجة.",
+      items: [
+        {
+          caption: "فريقنا الميداني يفرغ مواد الإغاثة لتوزيعها على العائلات المحلية.",
+        },
+        {
+          caption: "توزيع حزم المساعدات مباشرة من شاحنة التوصيل.",
+        },
+        {
+          caption: "حمل المستلزمات الأساسية للعائلات الأكثر احتياجاً.",
+        },
+        {
+          caption: "الوصول إلى الأحياء حياً تلو الآخر بالمساعدات الأساسية.",
+        },
+        {
+          caption: "تسليم الطرود يداً بيد لشركائنا في المجتمع.",
+        },
+        {
+          caption: "التعاون مع المتاجر المحلية لتجهيز حقائب اللوازم المدرسية للأطفال.",
+        },
+        {
+          caption: "تجهيز الحقائب المدرسية والقرطاسية استعداداً للعام الدراسي.",
+        },
+        {
+          caption: "توزيع الحقائب المدرسية والقرطاسية على الأطفال في فعالية مجتمعية.",
+        },
+      ],
     },
     contact: {
       title: "تواصل معنا",

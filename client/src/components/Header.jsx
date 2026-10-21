@@ -14,6 +14,7 @@ function Header() {
     { href: "#programs", label: t.nav.programs },
     { href: "#about", label: t.nav.about },
     { href: "#events", label: t.nav.events },
+    { href: "#gallery", label: t.nav.gallery },
     { href: "#contact", label: t.nav.contact },
   ];
 
