@@ -4,7 +4,6 @@ import { useLanguage } from "../context/LanguageContext";
 
 function Events() {
   const { t } = useLanguage();
-  const { item } = t.events;
 
   return (
     <section id="events" className="events">
@@ -16,28 +15,32 @@ function Events() {
           {t.events.lede}
         </Reveal>
 
-        <Reveal className="event-card" delay={120}>
+        <Reveal className="events__message" delay={100}>
+          <p>Soon we will have a general meeting! Join us to connect with our community and learn more about our mission.</p>
+        </Reveal>
+
+        <Reveal className="event-card event-card--empty" delay={120}>
           <div className="event-card__icon">
             <IconCalendar />
           </div>
           <div className="event-card__body">
-            <span className="event-card__badge">{t.events.badge}</span>
-            <h3>{item.title}</h3>
+            <span className="event-card__badge event-card__badge--coming">Coming Soon</span>
+            <h3>General Meeting</h3>
             <dl className="event-card__meta">
               <div>
-                <dt>{item.dateLabel}</dt>
-                <dd>{item.dateValue}</dd>
+                <dt>Date</dt>
+                <dd className="event-card__placeholder">To be announced</dd>
               </div>
               <div>
-                <dt>{item.timeLabel}</dt>
-                <dd>{item.timeValue}</dd>
+                <dt>Time</dt>
+                <dd className="event-card__placeholder">To be announced</dd>
               </div>
               <div>
-                <dt>{item.formatLabel}</dt>
-                <dd>{item.formatValue}</dd>
+                <dt>Format</dt>
+                <dd className="event-card__placeholder">To be announced</dd>
               </div>
             </dl>
-            <p>{item.description}</p>
+            <p className="event-card__placeholder-text">Details will be shared soon. Stay tuned for updates!</p>
           </div>
         </Reveal>
       </div>

@@ -5,6 +5,7 @@ import Impact from "./components/Impact";
 import Programs from "./components/Programs";
 import About from "./components/About";
 import Gallery from "./components/Gallery";
+import Events from "./components/Events";
 import Contact from "./components/Contact";
 import Footer from "./components/Footer";
 import "./App.css";
@@ -32,6 +33,7 @@ function App() {
         <Impact />
         <Programs />
         <About />
+        <Events />
         <Contact />
       </main>
       <Footer apiStatus={apiStatus} />
