@@ -4,7 +4,6 @@ import Hero from "./components/Hero";
 import Impact from "./components/Impact";
 import Programs from "./components/Programs";
 import About from "./components/About";
-import Events from "./components/Events";
 import Gallery from "./components/Gallery";
 import Contact from "./components/Contact";
 import Footer from "./components/Footer";
@@ -29,11 +28,10 @@ function App() {
       <Header />
       <main>
         <Hero />
+        <Gallery />
         <Impact />
         <Programs />
         <About />
-        <Events />
-        <Gallery />
         <Contact />
       </main>
       <Footer apiStatus={apiStatus} />
