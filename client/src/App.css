@@ -9,23 +9,23 @@
   position: sticky;
   top: 0;
   z-index: 50;
-  background: rgba(255, 255, 255, 0.5);
-  backdrop-filter: blur(10px);
+  background: transparent;
+  transition: all 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94);
   border-bottom: 1px solid transparent;
-  transition: all 0.25s ease;
 }
 
 .site-header--scrolled {
-  background: rgba(255, 255, 255, 0.95);
-  border-bottom-color: rgba(0, 0, 0, 0.08);
-  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05);
+  background: rgba(255, 255, 255, 0.98);
+  backdrop-filter: blur(12px);
+  border-bottom-color: rgba(0, 0, 0, 0.06);
+  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.08);
 }
 
 .site-header__inner {
   display: flex;
   align-items: center;
   gap: 24px;
-  padding-block: 14px;
+  padding-block: 16px;
 }
 
 .site-header__brand {
@@ -33,20 +33,42 @@
   align-items: center;
   gap: 12px;
   text-decoration: none;
+  transition: opacity 0.3s ease;
+}
+
+.site-header__brand:hover {
+  opacity: 0.8;
 }
 
 .site-header__logo {
-  width: 48px;
-  height: 48px;
-  border-radius: 8px;
+  width: 44px;
+  height: 44px;
+  border-radius: 6px;
+  transition: transform 0.3s ease;
+}
+
+.site-header__brand:hover .site-header__logo {
+  transform: scale(1.05);
+}
+
+.site-header__brandtext {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
 }
 
 .site-header__name {
   font-family: var(--font-primary);
   font-weight: 500;
-  font-size: 18px;
-  letter-spacing: 0.3px;
+  font-size: 17px;
+  letter-spacing: 0.4px;
   color: var(--color-dark);
+  transition: color 0.3s ease;
+  line-height: 1;
+}
+
+.site-header--scrolled .site-header__name {
+  font-size: 16px;
 }
 
 html[dir="rtl"] .site-header__name {
@@ -56,29 +78,31 @@ html[dir="rtl"] .site-header__name {
 .site-nav {
   display: flex;
   align-items: center;
-  gap: 26px;
+  gap: 28px;
   margin-inline-start: auto;
   font-weight: 500;
   font-size: 14px;
-  letter-spacing: 0.2px;
+  letter-spacing: 0.15px;
 }
 
 .site-nav a:not(.donate-button) {
   text-decoration: none;
   color: var(--color-ink);
   position: relative;
-  transition: color 0.2s ease;
+  transition: color 0.3s ease;
+  padding-block: 4px;
 }
 
 .site-nav a:not(.donate-button)::after {
   content: "";
   position: absolute;
-  bottom: -4px;
+  bottom: -2px;
   inset-inline: 0;
   height: 2px;
   background: var(--color-secondary);
   transform: scaleX(0);
-  transition: transform 0.3s ease;
+  transform-origin: center;
+  transition: transform 0.4s cubic-bezier(0.34, 1.56, 0.64, 1);
 }
 
 .site-nav a:not(.donate-button):hover {
@@ -92,20 +116,39 @@ html[dir="rtl"] .site-header__name {
 .site-header__toggle {
   display: none;
   flex-direction: column;
-  gap: 5px;
+  gap: 6px;
   margin-inline-start: auto;
   background: none;
   border: none;
   cursor: pointer;
   padding: 8px;
+  transition: all 0.3s ease;
+}
+
+.site-header__toggle:hover {
+  opacity: 0.6;
 }
 
 .site-header__toggle span {
-  width: 24px;
-  height: 2px;
+  width: 22px;
+  height: 2.5px;
   background: var(--color-dark);
   border-radius: 2px;
-  transition: all 0.3s ease;
+  transition: all 0.4s cubic-bezier(0.34, 1.56, 0.64, 1);
+  transform-origin: center;
+}
+
+.site-header__toggle[aria-expanded="true"] span:nth-child(1) {
+  transform: rotate(45deg) translateY(10px);
+}
+
+.site-header__toggle[aria-expanded="true"] span:nth-child(2) {
+  opacity: 0;
+  transform: scale(0);
+}
+
+.site-header__toggle[aria-expanded="true"] span:nth-child(3) {
+  transform: rotate(-45deg) translateY(-10px);
 }
 
 /* ---------- HERO SECTION ---------- */
