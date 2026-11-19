@@ -36,7 +36,7 @@ const IMAGES = [
 
 function Gallery() {
   const { t } = useLanguage();
-  const [imagesToDisplay, setImagesToDisplay] = useState(9);
+  const [imagesToDisplay, setImagesToDisplay] = useState(6);
   const displayedImages = IMAGES.slice(0, imagesToDisplay);
   const hasMore = imagesToDisplay < IMAGES.length;
 
