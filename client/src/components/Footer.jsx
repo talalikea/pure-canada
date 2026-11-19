@@ -18,18 +18,22 @@ function Footer({ apiStatus = "checking..." }) {
         </div>
 
         <div className="site-footer__col">
-          <h4>{t.nav.home}</h4>
+          <h4>Navigation</h4>
           <a href="#top">{t.nav.home}</a>
           <a href="#programs">{t.nav.programs}</a>
           <a href="#about">{t.nav.about}</a>
           <a href="#events">{t.nav.events}</a>
+        </div>
+
+        <div className="site-footer__col">
+          <h4>Learn More</h4>
           <a href="#gallery">{t.nav.gallery}</a>
           <a href="#contact">{t.nav.contact}</a>
         </div>
 
         <div className="site-footer__col">
           <h4>{t.contact.title}</h4>
-          <span>{t.contact.email.label}: {t.contact.email.value}</span>
+          <a href={`mailto:${t.contact.email.value}`}>{t.contact.email.value}</a>
         </div>
       </div>
 
